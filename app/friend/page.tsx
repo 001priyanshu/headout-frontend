@@ -6,10 +6,13 @@ import { fetchUserById } from "../api/user";
 import { motion } from "framer-motion";
 
 export default function FriendPage() {
-  <Suspense fallback={<div>Loading...</div>}>
-    <Component />
-  </Suspense>
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Component />
+    </Suspense>
+  );
 }
+
 
 
 const Component = () => {
